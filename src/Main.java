@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int StartAccountBalanceWithPenny = 100_00;
-        int Refill = 2000_00;
-        int Bonus;
-        int Limit = 1000_00;
-        int FinishAccounBalance;
-        if (Refill > Limit) {
-            FinishAccounBalance = StartAccountBalanceWithPenny + Refill / 100;
+        int startAccountBalanceWithPenny = 100_00;
+        int refill = 100_00;
+        int limit = 1000_00;
+        int finishAccountBalance;
+        if (refill > limit) {
+            finishAccountBalance = startAccountBalanceWithPenny + refill / 100;
         } else {
-            FinishAccounBalance = StartAccountBalanceWithPenny;
+            finishAccountBalance = startAccountBalanceWithPenny;
         }
-        System.out.println(FinishAccounBalance);
+        System.out.println(finishAccountBalance);
     }
 }
